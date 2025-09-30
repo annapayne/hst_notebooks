@@ -4,6 +4,7 @@
 [![Weekly HTML Accessibility Check](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_html_accessibility_check.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_html_accessibility_check.yml)
 [![Weekly PEP8 Style Checks](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_pep8_style_check.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_pep8_style_check.yml)
 
+[![DOI](https://zenodo.org/badge/605151805.svg)](https://zenodo.org/badge/latestdoi/605151805)
 
 Summary and Description
 =======================
@@ -117,7 +118,7 @@ a new, isolated environment instead of using `stcal`
 Help
 ====
 If you uncover any issues or bugs, you can [open an issue on GitHub](https://github.com/spacetelescope/hst_notebooks/issues/new).  
-For faster responses, however, we encourage you to submit an [HST Help Desk Ticket](https://hsthelp.stsci.edu): 
+For faster responses, however, we encourage you to submit an [HST Help Desk Ticket](https://hsthelp.stsci.edu).
 
 
 
