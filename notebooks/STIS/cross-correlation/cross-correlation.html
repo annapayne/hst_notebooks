@@ -57,6 +57,8 @@
     <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/STIS/cross-correlation/cross-correlation';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -176,51 +178,169 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">ACS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/README.html">ACS Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_findsat_mrt/acs_findsat_mrt_example.html">Satellite trail detection in ACS/WFC data using acstools.findsat_mrt</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_saturation_trails/acs_saturation_trails.html">ACS Linearity with Saturated Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_cte_forward_model/acs_cte_forward_model_example.html">Pixel-based ACS/WFC CTE Forward Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_subarrays/acs_subarrays.html">ACS Image Reduction for Subarray Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_sbc_dark_analysis/acs_sbc_dark_analysis.html">SBC Dark Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_reduction/acs_reduction.html">ACS/WFC Image Reduction</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_pixel_area_maps/acs_pixel_area_maps.html">ACS Pixel Area Maps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_polarization_tools/acs_polarization_tools.html">Using ACS Polarization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_focus_diverse_epsfs/acs_focus_diverse_epsfs.html">Focus Diverse ePSFs for ACS/WFC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ACS/acs_exception_report/exception_report_checks.html">HST Exception Report - Investigate your ACS Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ACS/hst_orbits_ephem/hst_orbits_ephem.html">Getting HST Ephemeris and Related Data for an Observation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">COS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../COS/README.html">COS Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../COS/Setup/Setup.html">Setting up your computer environment for working with COS data</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/DataDl/DataDl.html">Downloading COS Data</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/ViewData/ViewData.html">Viewing COS Data</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/AsnFile/AsnFile.html">Modifying or Creating an Association File</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/CalCOS/CalCOS.html">Running the COS Data Pipeline (<code class="docutils literal notranslate"><span class="pre">CalCOS</span></code>)</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/SplitTag/SplitTag.html">Splitting COS Exposures into sub-exposures with <code class="docutils literal notranslate"><span class="pre">splittag</span></code></a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/DayNight/DayNight.html">Filtering out COS Data taken during the Day or Night</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../COS/LSF/LSF.html">Working with the COS Line Spread Function (LSF)</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/Extract/Extract.html">Editing the extraction boxes in a spectral extraction file (<code class="docutils literal notranslate"><span class="pre">XTRACTAB</span></code>)</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../COS/ExceptionReport/ExceptionReport.html">What to do when you get an Exception Report for COS</a></li>
+
+
+
+
+
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">DrizzlePac</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/README.html">DrizzlePac Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/using_updated_astrometry_solutions/using_updated_astrometry_solutions.html">Improving Astrometry Using Alternate WCS Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/align_to_catalogs/align_to_catalogs.html">Aligning HST images to an Absolute Reference Catalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/align_sparse_fields/align_sparse_fields.html">Aligning Deep Exposures of Sparse Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.html">TWEAKREG Tips - Using DS9 Regions for Source Inclusion/Exclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/optimize_image_sampling/optimize_image_sampling.html">Optimizing the Image Sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/align_mosaics/align_mosaics.html">Aligning HST Mosaics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/sky_matching/sky_matching.html">Sky Matching for HST Mosaics <a id="top"></a></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/mask_satellite/mask_satellite.html">Satellite Trail Masking Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.html">Drizzling new WFPC2 FLT data products with chip-normalization</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HASP</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/README.html">HASP Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/Setup/Setup.html">Installing the Hubble Advanced Spectral Products Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/CoaddTutorial/CoaddTutorial.html">Inputting User Data using the Hubble Advanced Spectral Products Script</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/FluxScaleTutorial/FluxScaleTutorial.html">Scaling Flux while using the Hubble Advanced Spectral Products Script</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/DataDiagnostic/DataDiagnostics.html">HASP Data Diagnostic Notebook</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/WavelengthAdjustment/WavelengthAdjustment.html">Wavelength Adjustments for Running the Hubble Advanced Spectral Products (HASP) Script</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HSLA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/README.html">HSLA Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/COSLifetimePositions/COSLifetimePositions.html">Combining COS Data from Multiple Lifetime Positions and Central Wavelengths</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/Intro/Intro.html">Introduction to the HSLA Data Products and Tools</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/Setup/Setup.html">Installing the HASP/HSLA Spectral-Combination Script</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">NICMOS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../NICMOS/nicmos_unit_conversion/nicmos_unit_conversion.html">Programmatic Replacements for NICMOS Units Conversion Form</a></li>
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">STIS</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../README.html">STIS Notebooks</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Correcting for Missing Wavecals with Cross-Correlation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../custom_ccd_darks/custom_ccd_darks.html">Custom CCD Darks <a class="tocSkip"></a></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../drizpac_notebook/STIS_DrizzlePac_Tutorial.html">STIS DrizzlePac Tutorial <a class="tocSkip"></a></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom_ccd_darks/custom_ccd_darks.html">Custom CCD Darks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../drizpac_notebook/STIS_DrizzlePac_Tutorial.html">STIS DrizzlePac Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../CoronagraphyViz/STIS_Coronagraphy_Visualization_v2.html">STIS Coronagraphy Visualization Tool (v2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../calstis/calstis_2d_ccd.html">Calstis 2-D CCD Data Reduction <a class="tocSkip"></a></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../target_acquisition/target_acquisition.html">Evaluating STIS Target Acquisitions <a class="tocSkip"></a></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../calstis/calstis_2d_ccd.html">Calstis 2-D CCD Data Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../target_acquisition/target_acquisition.html">Evaluating STIS Target Acquisitions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../view_data/view_data.html">Viewing STIS Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../extraction/1D_Extraction.html">1D Spectra Extraction <a class="tocSkip"></a></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../low_count_uncertainties/Low_Count_Uncertainties.html">Low Count Uncertainties in STIS <a class="tocSkip"></a></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extraction/1D_Extraction.html">1D Spectra Extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../low_count_uncertainties/Low_Count_Uncertainties.html">Low Count Uncertainties in STIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contrast_sensitivity/STIS_Coronagraphic_Observation_Feasibility.html">STIS Coronagraphic Observation Feasibility</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">WFC3</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../WFC3/README.html">WFC3 Notebooks</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../WFC3/general_tools.html">General Tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/image_displayer_analyzer/wfc3_image_displayer_analyzer.html">WFC3 Image Displayer &amp; Analyzer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../WFC3/exception_report/wfc3_exception_report.html">Exception Report Checklist - WFC3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/calwf3_v1.0_cte/calwf3_with_v1.0_PCTE.html">Processing WFC3/UVIS Data with <code class="docutils literal notranslate"><span class="pre">calwf3</span></code> Using the v1.0 CTE-Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/persistence/wfc3_ir_persistence.html">Masking Persistence in WFC3/IR Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/uvis_g280_transit/G280_Exoplanet_Transits.html">Analyzing WFC3/UVIS G280 Exoplanet Transit Observations</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../WFC3/ir_tvb.html">WFC3/IR Time Variable Background (TVB)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/ir_ima_visualization/IR_IMA_Visualization_with_an_Example_of_Time_Variable_Background.html">WFC3/IR IMA Visualization Tools with An Example of Time Variable Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../WFC3/calwf3_recalibration/calwf3_recal_tvb.html">Manual Recalibration with calwf3: Turning off the IR Linear Ramp Fit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../WFC3/tvb_flattenramp/TVB_flattenramp_notebook.html">Correcting for Helium Line Emission Background in IR Exposures using the “Flatten-Ramp” Technique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/ir_scattered_light_calwf3_corrections/Correcting_for_Scattered_Light_in_IR_Exposures_Using_calwf3_to_Mask_Bad_Reads.html">Correcting for Scattered Light in WFC3/IR Exposures: Using <code class="docutils literal notranslate"><span class="pre">calwf3</span></code> to Mask Bad Reads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/ir_scattered_light_manual_corrections/Correcting_for_Scattered_Light_in_IR_Exposures_by_Manually_Subtracting_Bad_Reads.html">Correcting for Scattered Light in WFC3/IR Exposures: Manually Subtracting Bad Reads</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../WFC3/photometry.html">Photometry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../WFC3/photometry.html">Photometry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/filter_transformations/filter_transformations.html">WFC3/UVIS Filter Transformations with stsynphot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/flux_conversion_tool/flux_conversion_tool.html">Flux Unit Conversions with synphot and stsynphot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/photometry_examples/phot_examples.html">Synthetic Photometry Examples for WFC3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/uvis_time_dependent_photometry/uvis_timedep_phot.html">WFC3/UVIS Time-dependent Photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/zeropoints/zeropoints.html">Calculating WFC3 Zeropoints with STSynphot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/uvis_pam_corrections/WFC3_UVIS_Pixel_Area_Map_Corrections_for_Subarrays.html">WFC3/UVIS Pixel Area Map Corrections for Subarrays</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../WFC3/point_spread_function.html">Point Spread Function (PSF)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../WFC3/point_spread_function/hst_point_spread_function.html">HST WFC3 Point Spread Function Modeling   </a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/point_spread_function/hst_point_spread_function.html">HST WFC3 Point Spread Function Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../WFC3/mast_api_psf/download_psf_cutouts.html">Downloading WFC3 and WFPC2 PSF Cutouts from MAST</a></li>
 </ul>
 </details></li>
 </ul>
@@ -467,26 +587,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-necessary-packages">Import Necessary Packages</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-data-set-from-the-mast-archive-using-astroquery">Collect Data Set From the MAST Archive Using Astroquery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-necessary-packages">1.1 Import Necessary Packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-data-set-from-the-mast-archive-using-astroquery">1.2 Collect Data Set From the MAST Archive Using Astroquery</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x1d-spectra-of-the-observations">_x1d Spectra of the Observations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-shifted-spectrum">Creating Shifted Spectrum</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectrum-interpolation">Spectrum Interpolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x1d-spectra-of-the-observations">2. _x1d Spectra of the Observations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-shifted-spectrum">2.1 Creating Shifted Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectrum-interpolation">2.2 Spectrum Interpolation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-correlation">Cross-Correlation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispersion-per-pixel">Dispersion per Pixel</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-out-the-lyman-alpha-line">Masking out the Lyman-alpha line</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lag-and-cross-correlation-coefficient">Lag and Cross-Correlation Coefficient</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polynimial-fitting-and-zero-point-shift">Polynimial Fitting and Zero Point Shift</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-correlation">3. Cross-Correlation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispersion-per-pixel">3.1 Dispersion per Pixel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-out-the-lyman-alpha-line">3.2 Masking out the Lyman-alpha line</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lag-and-cross-correlation-coefficient">3.3 Lag and Cross-Correlation Coefficient</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polynimial-fitting-and-zero-point-shift">3.4 Polynimial Fitting and Zero Point Shift</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalibrate-spectrum">Recalibrate Spectrum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-notebook">About this Notebook <a class="tocSkip"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations <a class="tocSkip"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalibrate-spectrum">4. Recalibrate Spectrum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-notebook">About this Notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
 </ul>
             </nav>
         </div>
@@ -498,15 +619,44 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><a id=top></a></p>
+  <p><img alt="STScI Logo" src="_static/stsci_header.png" /></p>
+<p><a id=top></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="correcting-for-missing-wavecals-with-cross-correlation">
 <h1>Correcting for Missing Wavecals with Cross-Correlation<a class="headerlink" href="#correcting-for-missing-wavecals-with-cross-correlation" title="Link to this heading">#</a></h1>
-<h1>Learning Goals<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Introduction" data-toc-modified-id="Introduction-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Introduction</a></span><ul class="toc-item"><li><span><a href="#Import-Necessary-Packages" data-toc-modified-id="Import-Necessary-Packages-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Import Necessary Packages</a></span></li><li><span><a href="#Collect-Data-Set-From-the-MAST-Archive-Using-Astroquery" data-toc-modified-id="Collect-Data-Set-From-the-MAST-Archive-Using-Astroquery-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Collect Data Set From the MAST Archive Using Astroquery</a></span></li></ul></li><li><span><a href="#_x1d-Spectra-of-the-Observations" data-toc-modified-id="_x1d-Spectra-of-the-Observations-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>_x1d Spectra of the Observations</a></span><ul class="toc-item"><li><span><a href="#Creating-Shifted-Spectrum" data-toc-modified-id="Creating-Shifted-Spectrum-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Creating Shifted Spectrum</a></span></li><li><span><a href="#Spectrum-Interpolation" data-toc-modified-id="Spectrum-Interpolation-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Spectrum Interpolation</a></span></li></ul></li><li><span><a href="#Cross-Correlation" data-toc-modified-id="Cross-Correlation-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Cross-Correlation</a></span><ul class="toc-item"><li><span><a href="#Dispersion-per-Pixel" data-toc-modified-id="Dispersion-per-Pixel-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Dispersion per Pixel</a></span></li><li><span><a href="#Masking-out-the-Lyman-alpha-line" data-toc-modified-id="Masking-out-the-Lyman-alpha-line-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Masking out the Lyman-alpha line</a></span></li><li><span><a href="#Lag-and-Cross-Correlation-Coefficient" data-toc-modified-id="Lag-and-Cross-Correlation-Coefficient-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>Lag and Cross-Correlation Coefficient</a></span></li><li><span><a href="#Polynimial-Fitting-and-Zero-Point-Shift" data-toc-modified-id="Polynimial-Fitting-and-Zero-Point-Shift-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Polynimial Fitting and Zero Point Shift</a></span></li></ul></li><li><span><a href="#Recalibrate-Spectrum" data-toc-modified-id="Recalibrate-Spectrum-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Recalibrate Spectrum</a></span></li></ul></div><section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<section id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#section1"><span class="xref myst">1. Introduction</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#section1.1"><span class="xref myst">1.1 Import Necessary Packages</span></a></p></li>
+<li><p><a class="reference internal" href="#section1.2"><span class="xref myst">1.2 Collect Data Set From the MAST Archive Using Astroquery</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#section2"><span class="xref myst">2. _x1d Spectra of the Observations</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#section2.1"><span class="xref myst">2.1 Creating Shifted Spectrum</span></a></p></li>
+<li><p><a class="reference internal" href="#section2.2"><span class="xref myst">2.2 Spectrum Interpolation</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#section3"><span class="xref myst">3. Cross-Correlation</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#section3.1"><span class="xref myst">3.1 Dispersion per Pixel</span></a></p></li>
+<li><p><a class="reference internal" href="#section3.2"><span class="xref myst">3.2 Masking out the Lyman-alpha line</span></a></p></li>
+<li><p><a class="reference internal" href="#section3.3"><span class="xref myst">3.3 Lag and Cross-Correlation Coefficient</span></a></p></li>
+<li><p><a class="reference internal" href="#section3.4"><span class="xref myst">3.4 Polynimial Fitting and Zero Point Shift</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#section4"><span class="xref myst">4. Recalibrate Spectrum</span></a></p></li>
+<li><p><a class="reference internal" href="#about"><span class="xref myst">About this Notebook</span></a></p></li>
+</ul>
+<p><a id=section1></a></p>
+</section>
+<section id="introduction">
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>If the wavelength calibration fails due to, for example, a bad acquisition, the zero point in the spectral direction of the spectrum might be shifted because of the imprecise target positioning. However, if the target was observed multiple times and at least one has the correct zero point, then this shift can be corrected using cross-correlation. In this notebook, we will go through how to fix the shifted spectrum by cross-correlating it with a calibrated one.</p>
+<p><a id=section1.1></a></p>
 <section id="import-necessary-packages">
-<h3>Import Necessary Packages<a class="headerlink" href="#import-necessary-packages" title="Link to this heading">#</a></h3>
+<h3>1.1 Import Necessary Packages<a class="headerlink" href="#import-necessary-packages" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">astropy.io</span> <span class="pre">fits</span></code> <code class="docutils literal notranslate"><span class="pre">astropy.table</span> <span class="pre">Table</span></code> for accessing FITS files</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">astroquery.mast</span> <span class="pre">Observations</span></code> for finding and downloading data from the <a class="reference external" href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html">MAST</a> archive</p></li>
@@ -553,13 +703,16 @@ document.write(`
 </div>
 </div>
 </div>
+<p><a id=section1.2></a></p>
 </section>
 <section id="collect-data-set-from-the-mast-archive-using-astroquery">
-<h3>Collect Data Set From the MAST Archive Using Astroquery<a class="headerlink" href="#collect-data-set-from-the-mast-archive-using-astroquery" title="Link to this heading">#</a></h3>
+<h3>1.2 Collect Data Set From the MAST Archive Using Astroquery<a class="headerlink" href="#collect-data-set-from-the-mast-archive-using-astroquery" title="Link to this heading">#</a></h3>
 <p>In this notebook, we need to download two datasets and explore their correlation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remove downlaod directory if it already exists</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> --no-stderr output
+
+<span class="c1"># remove downlaod directory if it already exists</span>
 <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;./mastDownload&quot;</span><span class="p">):</span>
     <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="s2">&quot;./mastDownload&quot;</span><span class="p">)</span>
 <span class="c1"># Search target object by obs_id</span>
@@ -573,75 +726,15 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101050_raw.fits to ./mastDownload/HST/odj101050/odj101050_raw.fits ...
-</pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101050_x2d.fits to ./mastDownload/HST/odj101050/odj101050_x2d.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101050_flt.fits to ./mastDownload/HST/odj101050/odj101050_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101050_x1d.fits to ./mastDownload/HST/odj101050/odj101050_x1d.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101060_raw.fits to ./mastDownload/HST/odj101060/odj101060_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101060_x2d.fits to ./mastDownload/HST/odj101060/odj101060_x2d.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101060_flt.fits to ./mastDownload/HST/odj101060/odj101060_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/odj101060_x1d.fits to ./mastDownload/HST/odj101060/odj101060_x1d.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output text_html"><div><i>Table length=8</i>
-<table id="table139986709759120" class="table-striped table-bordered table-condensed">
-<thead><tr><th>Local Path</th><th>Status</th><th>Message</th><th>URL</th></tr></thead>
-<thead><tr><th>str47</th><th>str8</th><th>object</th><th>object</th></tr></thead>
-<tr><td>./mastDownload/HST/odj101050/odj101050_raw.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/odj101050/odj101050_x2d.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/odj101050/odj101050_flt.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/odj101050/odj101050_x1d.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/odj101060/odj101060_raw.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/odj101060/odj101060_x2d.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/odj101060/odj101060_flt.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/odj101060/odj101060_x1d.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-</table></div></div></div>
-</div>
+<p><a id=section2></a></p>
 </section>
 </section>
 <section id="x1d-spectra-of-the-observations">
-<h2>_x1d Spectra of the Observations<a class="headerlink" href="#x1d-spectra-of-the-observations" title="Link to this heading">#</a></h2>
+<h2>2. _x1d Spectra of the Observations<a class="headerlink" href="#x1d-spectra-of-the-observations" title="Link to this heading">#</a></h2>
+<p><a id=section2.1></a></p>
 <section id="creating-shifted-spectrum">
-<h3>Creating Shifted Spectrum<a class="headerlink" href="#creating-shifted-spectrum" title="Link to this heading">#</a></h3>
+<h3>2.1 Creating Shifted Spectrum<a class="headerlink" href="#creating-shifted-spectrum" title="Link to this heading">#</a></h3>
 <p>In this notebook, we select two datasets of observations (odj101050, odj101060) with the same target (-PHI-LEO), detector (FUV-MAMA), and grating (G140M). We artificially shift one of the spectra (odj101050) to simulate the wavelength zeropoint shifted spectrum due to target acquisition failures, and use the other spectrum (odj101060) as the reference to conduct cross-correlation. To shift the spectrum, we set the “WAVECORR” calibration switch in the raw fits file to “OMIT” and recalibrate the spectrum using Calstis. “WAVECORR” is the calibration step that determines the shift of the image on the detector along each axis, and therefore by turning off the “WAVECORR” calibration switch, wavecal is not performed and the spectrum is systemetically shifted. We will then use the shifted spectrum and the reference spectrum to determine the wavelength zero point shift, recalibrate this shifted spectrum, and compare it with the original pipeline spectrum.</p>
 <p>Next, use the <a class="reference external" href="https://hst-crds.stsci.edu">Calibration Reference Data System</a> (CRDS) <a class="reference external" href="https://hst-crds.stsci.edu/static/users_guide/command_line_tools.html">command line tools</a> to update and download the reference files.</p>
 <div class="cell docutils container">
@@ -656,20 +749,9 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>crds<span class="w"> </span>bestrefs<span class="w"> </span>--update-bestrefs<span class="w"> </span>--sync-references<span class="o">=</span><span class="m">1</span><span class="w"> </span>--files<span class="w"> </span>./mastDownload/HST/odj101050/odj101050_raw.fits
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  No comparison context or source comparison requested.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  ===&gt; Processing ./mastDownload/HST/odj101050/odj101050_raw.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  0 errors
-CRDS - INFO -  0 warnings
-CRDS - INFO -  2 infos
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> --no-stderr output
+
+<span class="err">!</span><span class="n">crds</span> <span class="n">bestrefs</span> <span class="o">--</span><span class="n">update</span><span class="o">-</span><span class="n">bestrefs</span> <span class="o">--</span><span class="n">sync</span><span class="o">-</span><span class="n">references</span><span class="o">=</span><span class="mi">1</span> <span class="o">--</span><span class="n">files</span> <span class="o">./</span><span class="n">mastDownload</span><span class="o">/</span><span class="n">HST</span><span class="o">/</span><span class="n">odj101050</span><span class="o">/</span><span class="n">odj101050_raw</span><span class="o">.</span><span class="n">fits</span>
 </pre></div>
 </div>
 </div>
@@ -691,7 +773,9 @@ CRDS - INFO -  2 infos
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Recalibration</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> --no-stderr output
+
+<span class="c1"># Recalibration</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">stistools</span><span class="o">.</span><span class="n">calstis</span><span class="o">.</span><span class="n">calstis</span><span class="p">(</span><span class="n">pip_raw</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">outroot</span><span class="o">=</span><span class="s2">&quot;./Shifted/&quot;</span><span class="p">)</span>
 <span class="c1"># calstis returns 0 if calibration completes; if not, raise assertion error</span>
 <span class="k">assert</span> <span class="n">res</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;CalSTIS exited with an error:  </span><span class="si">{</span><span class="n">res</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -700,13 +784,13 @@ CRDS - INFO -  2 infos
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:31 UTC
+Begin    21-Nov-2025 18:10:11 UTC
 
 Input    ./mastDownload/HST/odj101050/odj101050_raw.fits
 Outroot  ./Shifted/odj101050_raw.fits
 
 *** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:31 UTC
+Begin    21-Nov-2025 18:10:11 UTC
 Input    ./mastDownload/HST/odj101050/odj101050_raw.fits
 Output   ./Shifted/odj101050_flt.fits
 OBSMODE  ACCUM
@@ -714,21 +798,17 @@ APERTURE 52X0.2
 OPT_ELEM G140M
 DETECTOR FUV-MAMA
 
-Imset 1  Begin 00:40:31 UTC
+Imset 1  Begin 18:10:11 UTC
 
 DQICORR  PERFORM
 DQITAB   oref$uce15153o_bpx.fits
 DQITAB   PEDIGREE=GROUND
 DQITAB   DESCRIP =New BPIXTAB with opt_elem column and correct repeller wire flag----
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DQICORR  COMPLETE
+DQICORR  COMPLETE
          Uncertainty array initialized.
 
 LORSCORR PERFORM
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>LORSCORR COMPLETE
+LORSCORR COMPLETE
 
 GLINCORR PERFORM
 LFLGCORR PERFORM
@@ -754,9 +834,7 @@ PFLTFILE DESCRIP =On-orbit FUV P-flat created from proposals 7645,8428,8862,8922
 LFLTFILE oref$m1b2139no_lfl.fits
 LFLTFILE PEDIGREE=DUMMY
 LFLTFILE DESCRIP =Dummy file created by M. Mcgrath. Modified by C Proffitt
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FLATCORR COMPLETE
+FLATCORR COMPLETE
 
 PHOTCORR OMIT
 
@@ -764,27 +842,27 @@ DOPPCORR applied to DQICORR, DARKCORR, FLATCORR
 
 STATFLAG PERFORM
 STATFLAG COMPLETE
-Imset 1  End 00:40:31 UTC
+Imset 1  End 18:10:12 UTC
 
-End      29-Oct-2025 00:40:31 UTC
+End      21-Nov-2025 18:10:12 UTC
 
 *** CALSTIS-1 complete ***
 
 *** CALSTIS-7 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:31 UTC
+Begin    21-Nov-2025 18:10:12 UTC
 Input    ./Shifted/odj101050_flt.fits
 Output   ./Shifted/odj101050_x2d.fits
 OBSMODE  ACCUM
 APERTURE 52X0.2
 OPT_ELEM G140M
 DETECTOR FUV-MAMA
-Imset 1  Begin 00:40:31 UTC
+Imset 1  Begin 18:10:12 UTC
 Warning  Wavecal processing has not been performed.
 
 HELCORR  PERFORM
 HELCORR  COMPLETE
 
-Order 1  Begin 00:40:31 UTC
+Order 1  Begin 18:10:12 UTC
 
 X2DCORR  PERFORM
 DISPCORR PERFORM
@@ -828,15 +906,15 @@ TDSTAB   DESCRIP =Updated time and slope arrays for all optical elements.
 FLUXCORR COMPLETE
 X2DCORR  COMPLETE
 DISPCORR COMPLETE
-Order 1  End 00:40:31 UTC
-Imset 1  End 00:40:31 UTC
+Order 1  End 18:10:12 UTC
+Imset 1  End 18:10:12 UTC
 
-End      29-Oct-2025 00:40:31 UTC
+End      21-Nov-2025 18:10:12 UTC
 
 *** CALSTIS-7 complete ***
 
 *** CALSTIS-6 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:31 UTC
+Begin    21-Nov-2025 18:10:12 UTC
 
 Warning  Grating-aperture throughput correction table (GACTAB) was not found,
          and no gac corrections will be applied
@@ -856,13 +934,13 @@ SPTRCTAB oref$77o1827do_1dt.fits
 SPTRCTAB PEDIGREE=INFLIGHT 27/02/1997 01/12/2009
 SPTRCTAB DESCRIP =New traces for select echelle secondary modes
 
-Imset 1  Begin 00:40:31 UTC
-         Input read into memory.
-Order 1  Begin 00:40:31 UTC
-X1DCORR  PERFORM
+Imset 1  Begin 18:10:12 UTC
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>BACKCORR PERFORM
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>         Input read into memory.
+Order 1  Begin 18:10:12 UTC
+X1DCORR  PERFORM
+BACKCORR PERFORM
 ******** Calling Slfit ***********BACKCORR COMPLETE
 X1DCORR  COMPLETE
          Spectrum extracted at y position = 390.008
@@ -901,16 +979,16 @@ FLUXCORR COMPLETE
 SGEOCORR OMIT
 
          Row 1 written to disk.
-Order 1  End 00:40:31 UTC
+Order 1  End 18:10:12 UTC
 
-Imset 1  End 00:40:31 UTC
+Imset 1  End 18:10:12 UTC
 
 Warning  Keyword `XTRACALG&#39; is being added to header.
-End      29-Oct-2025 00:40:31 UTC
+End      21-Nov-2025 18:10:12 UTC
 
 *** CALSTIS-6 complete ***
 
-End      29-Oct-2025 00:40:31 UTC
+End      21-Nov-2025 18:10:12 UTC
 
 *** CALSTIS-0 complete ***
 </pre></div>
@@ -948,9 +1026,10 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 <img alt="../../../_images/41db5f566a5f69b205aec646a8a86be51e3be095ffeccfc94a092089fb2e5184.png" src="../../../_images/41db5f566a5f69b205aec646a8a86be51e3be095ffeccfc94a092089fb2e5184.png" />
 </div>
 </div>
+<p><a id=section2.2></a></p>
 </section>
 <section id="spectrum-interpolation">
-<h3>Spectrum Interpolation<a class="headerlink" href="#spectrum-interpolation" title="Link to this heading">#</a></h3>
+<h3>2.2 Spectrum Interpolation<a class="headerlink" href="#spectrum-interpolation" title="Link to this heading">#</a></h3>
 <p>Since the wavelength range of the pipeline and shifted spectra are different, we interpolate one of the spectra based on the wavelength of the other one so that the two spectra share the same wavelength array. As shown in the plot, the spectrum with “WAVECORR” turned off is systemetically shifted to the left.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -982,12 +1061,14 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 <img alt="../../../_images/1ba0b0e119c217aa3bd00bfc660b7dd1220cbc9d2c41fad610deb970a42fd595.png" src="../../../_images/1ba0b0e119c217aa3bd00bfc660b7dd1220cbc9d2c41fad610deb970a42fd595.png" />
 </div>
 </div>
+<p><a id=section3></a></p>
 </section>
 </section>
 <section id="cross-correlation">
-<h2>Cross-Correlation<a class="headerlink" href="#cross-correlation" title="Link to this heading">#</a></h2>
+<h2>3. Cross-Correlation<a class="headerlink" href="#cross-correlation" title="Link to this heading">#</a></h2>
+<p><a id=section3.1></a></p>
 <section id="dispersion-per-pixel">
-<h3>Dispersion per Pixel<a class="headerlink" href="#dispersion-per-pixel" title="Link to this heading">#</a></h3>
+<h3>3.1 Dispersion per Pixel<a class="headerlink" href="#dispersion-per-pixel" title="Link to this heading">#</a></h3>
 <p>To perform cross-correlation, detemine the shift amount in pixels, and then convert it into wavelength, we first need to determine the dispersion per pixel, i.e., the mean differences of adjacent data points in the wavelength grid.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1003,9 +1084,10 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 </div>
 </div>
 </div>
+<p><a id=section3.2></a></p>
 </section>
 <section id="masking-out-the-lyman-alpha-line">
-<h3>Masking out the Lyman-alpha line<a class="headerlink" href="#masking-out-the-lyman-alpha-line" title="Link to this heading">#</a></h3>
+<h3>3.2 Masking out the Lyman-alpha line<a class="headerlink" href="#masking-out-the-lyman-alpha-line" title="Link to this heading">#</a></h3>
 <p>The absorption line at around 1215 Å is from Hydrogen Lyman-alpha, which mostly comes from the atmosphere and so should not shift like the science spectrum. Therefore, we need to mask out this region by separating the spectrum into two parts and perform two cross-correlations. There are other airglows lines in the ultraviolet that also does not shift with the science spectrum, including OI line at 1302 Å, OI line at 1305 Å, OI line at 1306 Å. For more information on the Airglow, see: <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/cos/calibration/airglow"><code class="docutils literal notranslate"><span class="pre">AIRGLOW</span></code></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1020,14 +1102,16 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 </div>
 </div>
 </div>
+<p><a id=section3.3></a></p>
 </section>
 <section id="lag-and-cross-correlation-coefficient">
-<h3>Lag and Cross-Correlation Coefficient<a class="headerlink" href="#lag-and-cross-correlation-coefficient" title="Link to this heading">#</a></h3>
+<h3>3.3 Lag and Cross-Correlation Coefficient<a class="headerlink" href="#lag-and-cross-correlation-coefficient" title="Link to this heading">#</a></h3>
 <p>The lag is the displacement (in pixels) in the lagged spectrum. If the lag is 0, the spectra are aligned and not shifted.</p>
 <p>The cross-correlation coefficient decodes how similar two spectra are. The cross-correlation coefficient takes values from -1 to 1: if it’s positive, the 2 spectra are positively correlated, if it’s negative, the 2 spectra are negatively correlated.</p>
 <p>The cross-correlation algorithm shifts one of the input spectra according the the lags, and computes the cross-correlation coefficient for each lag. Then we take the lag with the maximum cross-coefficient and compute the corresponding displacement in wavelength space.</p>
 <p>In general, the cross-correlation can be written as:</p>
-<p style="text-align: center;">$C_{xy}[k]=\sum_n x[n] y[n+k]$</p>
+<div class="math notranslate nohighlight">
+\[C_{xy}[k]=\sum_n x[n] y[n+k]\]</div>
 <p>in which k is the lag, C is the cross-correlation coefficient, and x and y are the input spectra.</p>
 <p><strong>Normalization of the input spectra is required to ensure the cross-correlation coefficient is in the [-1,1] range.</strong></p>
 <div class="cell docutils container">
@@ -1051,9 +1135,10 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 </div>
 </div>
 </div>
+<p><a id=section3.4></a></p>
 </section>
 <section id="polynimial-fitting-and-zero-point-shift">
-<h3>Polynimial Fitting and Zero Point Shift<a class="headerlink" href="#polynimial-fitting-and-zero-point-shift" title="Link to this heading">#</a></h3>
+<h3>3.4 Polynimial Fitting and Zero Point Shift<a class="headerlink" href="#polynimial-fitting-and-zero-point-shift" title="Link to this heading">#</a></h3>
 <p>After we get the lag and cross-correlation coefficient, we can determine the zero point shift by finding the lag with the maximum cross-correlation coefficient. However, since we only have discrete pixels shifts, we will fit a quadratic curve near the peak, get a fractional pixel shift, and find the maxima of the quadratic curve as the zero point shift. The zero point shift is shown as the green vertical line in the plot.</p>
 <p>In this specific case, we choose the lag from -3 to 3, and fitted a 2 degree polynomial curve around the maximum cross-correlation coefficient to determine the shift in pixel space.<strong>The lag range and polynomial fitting is not the single solution that can be applied to all cases of wavelength zero point shifts. Users should experiment with the lag range and number of points to fit the polynomial curve based on the use case.</strong></p>
 <p>We first find the lag and cross-correlation coefficient of the right part of the spectrum:</p>
@@ -1085,7 +1170,7 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f5149e16090&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fb051655390&gt;
 </pre></div>
 </div>
 <img alt="../../../_images/430eb482c425eea6aac65617dccba5777233dd5281033cb63b8c564baa1fdfbf.png" src="../../../_images/430eb482c425eea6aac65617dccba5777233dd5281033cb63b8c564baa1fdfbf.png" />
@@ -1154,10 +1239,11 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 </div>
 </div>
 </div>
+<p><a id=section4></a></p>
 </section>
 </section>
 <section id="recalibrate-spectrum">
-<h2>Recalibrate Spectrum<a class="headerlink" href="#recalibrate-spectrum" title="Link to this heading">#</a></h2>
+<h2>4. Recalibrate Spectrum<a class="headerlink" href="#recalibrate-spectrum" title="Link to this heading">#</a></h2>
 <p>After we determine the wavelength zero point shift, we can use the value to recalibrate the spectrum.</p>
 <p>In the Calstis pipeline, “WAVECORR” calibration step determines the spectral shift values, and writes the keyword values SHIFTA1, SHIFTA2 for the spectral and spatial shifts, respectively, to the science header. To apply the spectral shift from the cross-correlation, we get the SHIFTA1, SHIFTA2 keywords from the _flt fits file, add the shift (in pixel space) to SHIFTA1, and write the updated keywords to the _raw fits file.</p>
 <div class="cell docutils container">
@@ -1189,7 +1275,9 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 <p>Recalibrate the spectrum using the Calstis pipeline. We create a new folder called “Recalibration” to store the recalibrated files. For more information on the Calstis pipeline, see: <a class="reference external" href="https://hst-docs.stsci.edu/stisdhb/chapter-3-stis-calibration">STIS Calibration</a>, <a class="reference external" href="https://stistools.readthedocs.io/en/latest/calstis.html">calstis</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create and clean &quot;./Recalibration&quot; directory for saving new files</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> --no-stderr output
+
+<span class="c1"># Create and clean &quot;./Recalibration&quot; directory for saving new files</span>
 <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;./Recalibration&quot;</span><span class="p">):</span>
     <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="s2">&quot;./Recalibration&quot;</span><span class="p">)</span>
 <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;./Recalibration&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1203,13 +1291,13 @@ As seen in the plot, the spectrum is now shifted compared to the pipeline spectr
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:32 UTC
+Begin    21-Nov-2025 18:10:13 UTC
 
 Input    ./mastDownload/HST/odj101050/odj101050_raw.fits
 Outroot  ./Recalibration/odj101050_raw.fits
 
 *** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:32 UTC
+Begin    21-Nov-2025 18:10:13 UTC
 Input    ./mastDownload/HST/odj101050/odj101050_raw.fits
 Output   ./Recalibration/odj101050_flt.fits
 OBSMODE  ACCUM
@@ -1217,7 +1305,7 @@ APERTURE 52X0.2
 OPT_ELEM G140M
 DETECTOR FUV-MAMA
 
-Imset 1  Begin 00:40:32 UTC
+Imset 1  Begin 18:10:13 UTC
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DQICORR  PERFORM
@@ -1264,27 +1352,27 @@ DOPPCORR applied to DQICORR, DARKCORR, FLATCORR
 
 STATFLAG PERFORM
 STATFLAG COMPLETE
-Imset 1  End 00:40:33 UTC
+Imset 1  End 18:10:13 UTC
 
-End      29-Oct-2025 00:40:33 UTC
+End      21-Nov-2025 18:10:13 UTC
 
 *** CALSTIS-1 complete ***
 
 *** CALSTIS-7 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:33 UTC
+Begin    21-Nov-2025 18:10:13 UTC
 Input    ./Recalibration/odj101050_flt.fits
 Output   ./Recalibration/odj101050_x2d.fits
 OBSMODE  ACCUM
 APERTURE 52X0.2
 OPT_ELEM G140M
 DETECTOR FUV-MAMA
-Imset 1  Begin 00:40:33 UTC
+Imset 1  Begin 18:10:13 UTC
 Warning  Wavecal processing has not been performed.
 
 HELCORR  PERFORM
 HELCORR  COMPLETE
 
-Order 1  Begin 00:40:33 UTC
+Order 1  Begin 18:10:13 UTC
 
 X2DCORR  PERFORM
 DISPCORR PERFORM
@@ -1328,15 +1416,15 @@ TDSTAB   DESCRIP =Updated time and slope arrays for all optical elements.
 FLUXCORR COMPLETE
 X2DCORR  COMPLETE
 DISPCORR COMPLETE
-Order 1  End 00:40:33 UTC
-Imset 1  End 00:40:33 UTC
+Order 1  End 18:10:13 UTC
+Imset 1  End 18:10:13 UTC
 
-End      29-Oct-2025 00:40:33 UTC
+End      21-Nov-2025 18:10:13 UTC
 
 *** CALSTIS-7 complete ***
 
 *** CALSTIS-6 -- Version 3.4.2 (19-Jan-2018) ***
-Begin    29-Oct-2025 00:40:33 UTC
+Begin    21-Nov-2025 18:10:13 UTC
 
 Warning  Grating-aperture throughput correction table (GACTAB) was not found,
          and no gac corrections will be applied
@@ -1356,9 +1444,9 @@ SPTRCTAB oref$77o1827do_1dt.fits
 SPTRCTAB PEDIGREE=INFLIGHT 27/02/1997 01/12/2009
 SPTRCTAB DESCRIP =New traces for select echelle secondary modes
 
-Imset 1  Begin 00:40:33 UTC
+Imset 1  Begin 18:10:13 UTC
          Input read into memory.
-Order 1  Begin 00:40:33 UTC
+Order 1  Begin 18:10:13 UTC
 X1DCORR  PERFORM
 </pre></div>
 </div>
@@ -1401,16 +1489,16 @@ FLUXCORR COMPLETE
 SGEOCORR OMIT
 
          Row 1 written to disk.
-Order 1  End 00:40:33 UTC
+Order 1  End 18:10:13 UTC
 
-Imset 1  End 00:40:33 UTC
+Imset 1  End 18:10:13 UTC
 
 Warning  Keyword `XTRACALG&#39; is being added to header.
-End      29-Oct-2025 00:40:33 UTC
+End      21-Nov-2025 18:10:13 UTC
 
 *** CALSTIS-6 complete ***
 
-End      29-Oct-2025 00:40:33 UTC
+End      21-Nov-2025 18:10:13 UTC
 
 *** CALSTIS-0 complete ***
 </pre></div>
@@ -1457,18 +1545,19 @@ End      29-Oct-2025 00:40:33 UTC
 <img alt="../../../_images/737bed2bb23c84a926752edf8d0f7355468122b4be11dc311c8d0d71f677f0e2.png" src="../../../_images/737bed2bb23c84a926752edf8d0f7355468122b4be11dc311c8d0d71f677f0e2.png" />
 </div>
 </div>
+<p><a id=about></a></p>
 </section>
 <hr class="docutils" />
 <section id="about-this-notebook">
-<h2>About this Notebook <a class="tocSkip"><a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
-<p><strong>Author:</strong> <a class="reference internal" href="#kding&#64;stsci.edu"><span class="xref myst">Keyi Ding</span></a></p>
-<p><strong>Updated On:</strong> 2023-04-14</p>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
+<p><strong>Author:</strong> Keyi Ding</p>
+<p><strong>Updated On:</strong> 2025-11-04</p>
 <blockquote>
 <div><p><em>This tutorial was generated to be in compliance with the <a class="reference external" href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a class="reference external" href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em></p>
 </div></blockquote>
 </section>
 <section id="citations">
-<h2>Citations <a class="tocSkip"><a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, or <code class="docutils literal notranslate"><span class="pre">numpy</span></code> for published research, please cite the
 authors. Follow these links for more information about citations:</p>
 <ul class="simple">
@@ -1479,7 +1568,7 @@ authors. Follow these links for more information about citations:</p>
 </ul>
 <hr>
 <p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a>
-<a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
+<a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/hst_notebooks/main/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/hst_notebooks/main/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
 </section>
 </section>
 
@@ -1527,7 +1616,7 @@ authors. Follow these links for more information about citations:</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Custom CCD Darks <a class="tocSkip"></p>
+        <p class="prev-next-title">Custom CCD Darks</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1547,26 +1636,27 @@ authors. Follow these links for more information about citations:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-necessary-packages">Import Necessary Packages</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-data-set-from-the-mast-archive-using-astroquery">Collect Data Set From the MAST Archive Using Astroquery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-necessary-packages">1.1 Import Necessary Packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collect-data-set-from-the-mast-archive-using-astroquery">1.2 Collect Data Set From the MAST Archive Using Astroquery</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x1d-spectra-of-the-observations">_x1d Spectra of the Observations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-shifted-spectrum">Creating Shifted Spectrum</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectrum-interpolation">Spectrum Interpolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x1d-spectra-of-the-observations">2. _x1d Spectra of the Observations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-shifted-spectrum">2.1 Creating Shifted Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectrum-interpolation">2.2 Spectrum Interpolation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-correlation">Cross-Correlation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispersion-per-pixel">Dispersion per Pixel</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-out-the-lyman-alpha-line">Masking out the Lyman-alpha line</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lag-and-cross-correlation-coefficient">Lag and Cross-Correlation Coefficient</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polynimial-fitting-and-zero-point-shift">Polynimial Fitting and Zero Point Shift</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-correlation">3. Cross-Correlation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispersion-per-pixel">3.1 Dispersion per Pixel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-out-the-lyman-alpha-line">3.2 Masking out the Lyman-alpha line</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lag-and-cross-correlation-coefficient">3.3 Lag and Cross-Correlation Coefficient</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polynimial-fitting-and-zero-point-shift">3.4 Polynimial Fitting and Zero Point Shift</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalibrate-spectrum">Recalibrate Spectrum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-notebook">About this Notebook <a class="tocSkip"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations <a class="tocSkip"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalibrate-spectrum">4. Recalibrate Spectrum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-notebook">About this Notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
 </ul>
   </nav></div>
 

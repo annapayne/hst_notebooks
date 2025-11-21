@@ -1,5 +1,4 @@
-[![Notebook Execution and Validation](https://github.com/spacetelescope/hst_notebooks/actions/workflows/ci_runner.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/ci_runner.yml)
-[![Scheduled Notebook Execution](https://github.com/spacetelescope/hst_notebooks/actions/workflows/ci_nightly.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/ci_nightly.yml)
+[![Scheduled Notebook Execution](https://github.com/spacetelescope/hst_notebooks/actions/workflows/notebook-scheduled.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/notebook-scheduled.yml)
 [![Weekly broken link check](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_broken_link_finder.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_broken_link_finder.yml)
 [![Weekly HTML Accessibility Check](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_html_accessibility_check.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_html_accessibility_check.yml)
 [![Weekly PEP8 Style Checks](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_pep8_style_check.yml/badge.svg)](https://github.com/spacetelescope/hst_notebooks/actions/workflows/weekly_pep8_style_check.yml)
@@ -37,14 +36,14 @@ it requires no special tools beyond your web browser.
 See [this website](https://spacetelescope.github.io/hst_notebooks/)
 
 To download and execute the notebooks, we recommend you clone
-the `hst_notebooks <https://github.com/spacetelescope/hst_notebooks>`_
+the `hst_notebooks <https://github.com/spacetelescope/hst_notebooks>`
 repository to your local computer. 
 
 You can also click the "Download ZIP" option for the entire repository listed under the green "Code" button at the top of the repository landing page. You are also able to download individual notebooks, but it is not as straight forward or recommended, so we do not provide details here.
 
 Most notebooks have additional associated files in their folder,
 including a requirements file that lists packages necessary to run the notebooks.
-The packages in the requirements file can be installed using `pip <https://pip.pypa.io/en/stable/>`_ . 
+The packages in the requirements file can be installed using `pip <https://pip.pypa.io/en/stable/>`. 
 
 Any version dependencies are contained in the requirements file in 
 each notebook folder. Please use at least the minimum supported
@@ -70,12 +69,12 @@ You can then proceed to install the requirements for the specific notebook you a
 Run the notebook in an appropriate environment
 ----------------------------------------------
 
-Once you are in the directory of the notebook you want to use, make sure you have a populated environment that contains the required pacages::
+Once you are in the directory of the notebook you want to use, make sure you have a populated environment that contains the required packages:
 
     cd hst_notebooks/notebooks/<notebook-name>
 
 You may want to consider installing your notebooks in a new conda/mamba environment
-to avoid version conflicts with other packages you may have installed, for example::
+to avoid version conflicts with other packages you may have installed, for example:
 
     conda create -n hstnb python pip jupyter
     conda activate hstnb

@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ACS/README';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ACS Linearity with Saturated Stars" href="acs_saturation_trails/acs_saturation_trails.html" />
+    <link rel="next" title="Satellite trail detection in ACS/WFC data using acstools.findsat_mrt" href="acs_findsat_mrt/acs_findsat_mrt_example.html" />
     <link rel="prev" title="STScI HST Notebook Repository HQ" href="../../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,51 +176,169 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">ACS</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">ACS Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acs_findsat_mrt/acs_findsat_mrt_example.html">Satellite trail detection in ACS/WFC data using acstools.findsat_mrt</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acs_saturation_trails/acs_saturation_trails.html">ACS Linearity with Saturated Stars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acs_cte_forward_model/acs_cte_forward_model_example.html">Pixel-based ACS/WFC CTE Forward Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acs_subarrays/acs_subarrays.html">ACS Image Reduction for Subarray Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acs_sbc_dark_analysis/acs_sbc_dark_analysis.html">SBC Dark Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acs_reduction/acs_reduction.html">ACS/WFC Image Reduction</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="acs_pixel_area_maps/acs_pixel_area_maps.html">ACS Pixel Area Maps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acs_polarization_tools/acs_polarization_tools.html">Using ACS Polarization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acs_focus_diverse_epsfs/acs_focus_diverse_epsfs.html">Focus Diverse ePSFs for ACS/WFC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acs_exception_report/exception_report_checks.html">HST Exception Report - Investigate your ACS Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hst_orbits_ephem/hst_orbits_ephem.html">Getting HST Ephemeris and Related Data for an Observation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">COS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../COS/README.html">COS Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../COS/Setup/Setup.html">Setting up your computer environment for working with COS data</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/DataDl/DataDl.html">Downloading COS Data</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/ViewData/ViewData.html">Viewing COS Data</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/AsnFile/AsnFile.html">Modifying or Creating an Association File</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/CalCOS/CalCOS.html">Running the COS Data Pipeline (<code class="docutils literal notranslate"><span class="pre">CalCOS</span></code>)</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/SplitTag/SplitTag.html">Splitting COS Exposures into sub-exposures with <code class="docutils literal notranslate"><span class="pre">splittag</span></code></a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/DayNight/DayNight.html">Filtering out COS Data taken during the Day or Night</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../COS/LSF/LSF.html">Working with the COS Line Spread Function (LSF)</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/Extract/Extract.html">Editing the extraction boxes in a spectral extraction file (<code class="docutils literal notranslate"><span class="pre">XTRACTAB</span></code>)</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../COS/ExceptionReport/ExceptionReport.html">What to do when you get an Exception Report for COS</a></li>
+
+
+
+
+
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">DrizzlePac</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/README.html">DrizzlePac Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/using_updated_astrometry_solutions/using_updated_astrometry_solutions.html">Improving Astrometry Using Alternate WCS Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/align_to_catalogs/align_to_catalogs.html">Aligning HST images to an Absolute Reference Catalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/align_sparse_fields/align_sparse_fields.html">Aligning Deep Exposures of Sparse Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/use_ds9_regions_in_tweakreg/use_ds9_regions_in_tweakreg.html">TWEAKREG Tips - Using DS9 Regions for Source Inclusion/Exclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/optimize_image_sampling/optimize_image_sampling.html">Optimizing the Image Sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/align_mosaics/align_mosaics.html">Aligning HST Mosaics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/sky_matching/sky_matching.html">Sky Matching for HST Mosaics <a id="top"></a></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/mask_satellite/mask_satellite.html">Satellite Trail Masking Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.html">Drizzling new WFPC2 FLT data products with chip-normalization</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HASP</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../HASP/README.html">HASP Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HASP/Setup/Setup.html">Installing the Hubble Advanced Spectral Products Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HASP/CoaddTutorial/CoaddTutorial.html">Inputting User Data using the Hubble Advanced Spectral Products Script</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../HASP/FluxScaleTutorial/FluxScaleTutorial.html">Scaling Flux while using the Hubble Advanced Spectral Products Script</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../HASP/DataDiagnostic/DataDiagnostics.html">HASP Data Diagnostic Notebook</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../HASP/WavelengthAdjustment/WavelengthAdjustment.html">Wavelength Adjustments for Running the Hubble Advanced Spectral Products (HASP) Script</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HSLA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../HSLA/README.html">HSLA Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HSLA/COSLifetimePositions/COSLifetimePositions.html">Combining COS Data from Multiple Lifetime Positions and Central Wavelengths</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../HSLA/Intro/Intro.html">Introduction to the HSLA Data Products and Tools</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../HSLA/Setup/Setup.html">Installing the HASP/HSLA Spectral-Combination Script</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">NICMOS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../NICMOS/nicmos_unit_conversion/nicmos_unit_conversion.html">Programmatic Replacements for NICMOS Units Conversion Form</a></li>
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">STIS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../STIS/README.html">STIS Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../STIS/cross-correlation/cross-correlation.html">Correcting for Missing Wavecals with Cross-Correlation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../STIS/custom_ccd_darks/custom_ccd_darks.html">Custom CCD Darks <a class="tocSkip"></a></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../STIS/drizpac_notebook/STIS_DrizzlePac_Tutorial.html">STIS DrizzlePac Tutorial <a class="tocSkip"></a></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../STIS/custom_ccd_darks/custom_ccd_darks.html">Custom CCD Darks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../STIS/drizpac_notebook/STIS_DrizzlePac_Tutorial.html">STIS DrizzlePac Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../STIS/CoronagraphyViz/STIS_Coronagraphy_Visualization_v2.html">STIS Coronagraphy Visualization Tool (v2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../STIS/calstis/calstis_2d_ccd.html">Calstis 2-D CCD Data Reduction <a class="tocSkip"></a></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../STIS/target_acquisition/target_acquisition.html">Evaluating STIS Target Acquisitions <a class="tocSkip"></a></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../STIS/calstis/calstis_2d_ccd.html">Calstis 2-D CCD Data Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../STIS/target_acquisition/target_acquisition.html">Evaluating STIS Target Acquisitions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../STIS/view_data/view_data.html">Viewing STIS Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../STIS/extraction/1D_Extraction.html">1D Spectra Extraction <a class="tocSkip"></a></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../STIS/low_count_uncertainties/Low_Count_Uncertainties.html">Low Count Uncertainties in STIS <a class="tocSkip"></a></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../STIS/extraction/1D_Extraction.html">1D Spectra Extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../STIS/low_count_uncertainties/Low_Count_Uncertainties.html">Low Count Uncertainties in STIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../STIS/contrast_sensitivity/STIS_Coronagraphic_Observation_Feasibility.html">STIS Coronagraphic Observation Feasibility</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">WFC3</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../WFC3/README.html">WFC3 Notebooks</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../WFC3/general_tools.html">General Tools</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/image_displayer_analyzer/wfc3_image_displayer_analyzer.html">WFC3 Image Displayer &amp; Analyzer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../WFC3/exception_report/wfc3_exception_report.html">Exception Report Checklist - WFC3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/calwf3_v1.0_cte/calwf3_with_v1.0_PCTE.html">Processing WFC3/UVIS Data with <code class="docutils literal notranslate"><span class="pre">calwf3</span></code> Using the v1.0 CTE-Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/persistence/wfc3_ir_persistence.html">Masking Persistence in WFC3/IR Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/uvis_g280_transit/G280_Exoplanet_Transits.html">Analyzing WFC3/UVIS G280 Exoplanet Transit Observations</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../WFC3/ir_tvb.html">WFC3/IR Time Variable Background (TVB)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/ir_ima_visualization/IR_IMA_Visualization_with_an_Example_of_Time_Variable_Background.html">WFC3/IR IMA Visualization Tools with An Example of Time Variable Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../WFC3/calwf3_recalibration/calwf3_recal_tvb.html">Manual Recalibration with calwf3: Turning off the IR Linear Ramp Fit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../WFC3/tvb_flattenramp/TVB_flattenramp_notebook.html">Correcting for Helium Line Emission Background in IR Exposures using the “Flatten-Ramp” Technique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/ir_scattered_light_calwf3_corrections/Correcting_for_Scattered_Light_in_IR_Exposures_Using_calwf3_to_Mask_Bad_Reads.html">Correcting for Scattered Light in WFC3/IR Exposures: Using <code class="docutils literal notranslate"><span class="pre">calwf3</span></code> to Mask Bad Reads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/ir_scattered_light_manual_corrections/Correcting_for_Scattered_Light_in_IR_Exposures_by_Manually_Subtracting_Bad_Reads.html">Correcting for Scattered Light in WFC3/IR Exposures: Manually Subtracting Bad Reads</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../WFC3/photometry.html">Photometry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../WFC3/photometry.html">Photometry</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/filter_transformations/filter_transformations.html">WFC3/UVIS Filter Transformations with stsynphot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/flux_conversion_tool/flux_conversion_tool.html">Flux Unit Conversions with synphot and stsynphot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/photometry_examples/phot_examples.html">Synthetic Photometry Examples for WFC3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/uvis_time_dependent_photometry/uvis_timedep_phot.html">WFC3/UVIS Time-dependent Photometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/zeropoints/zeropoints.html">Calculating WFC3 Zeropoints with STSynphot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/uvis_pam_corrections/WFC3_UVIS_Pixel_Area_Map_Corrections_for_Subarrays.html">WFC3/UVIS Pixel Area Map Corrections for Subarrays</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../WFC3/point_spread_function.html">Point Spread Function (PSF)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../WFC3/point_spread_function/hst_point_spread_function.html">HST WFC3 Point Spread Function Modeling   </a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/point_spread_function/hst_point_spread_function.html">HST WFC3 Point Spread Function Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WFC3/mast_api_psf/download_psf_cutouts.html">Downloading WFC3 and WFPC2 PSF Cutouts from MAST</a></li>
 </ul>
 </details></li>
 </ul>
@@ -436,7 +554,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><a class="reference external" href="http://www.stsci.edu/hst/acs"><img alt="Developed For: ACS" src="https://img.shields.io/badge/developed%20for-ACS-orange.svg?style=flat" /></a> <a class="reference external" href="http://www.stsci.edu/"><img alt="Powered By: STScI" src="https://img.shields.io/badge/powered%20by-STScI-blue.svg?colorA=707170&amp;colorB=3e8ddd&amp;style=flat" /></a></p>
+  <p><img alt="STScI Logo" src="_static/stsci_header.png" /></p>
+<p><a class="reference external" href="http://www.stsci.edu/hst/acs"><img alt="Developed For: ACS" src="https://img.shields.io/badge/developed%20for-ACS-orange.svg?style=flat" /></a> <a class="reference external" href="http://www.stsci.edu/"><img alt="Powered By: STScI" src="https://img.shields.io/badge/powered%20by-STScI-blue.svg?colorA=707170&amp;colorB=3e8ddd&amp;style=flat" /></a></p>
 <p><img alt="ACS logo" src="notebooks/ACS/acs_logo.png" /></p>
 <section class="tex2jax_ignore mathjax_ignore" id="acs-notebooks">
 <h1>ACS Notebooks<a class="headerlink" href="#acs-notebooks" title="Link to this heading">#</a></h1>
@@ -445,26 +564,29 @@ document.write(`
 <p>Jupyter Notebooks allow code to be packaged with formatted text to create illustrative examples. Users who are unfamiliar with Jupyter Notebooks should also see the <a class="reference external" href="https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/">short guide</a> for how to use these tools.</p>
 <section id="before-running-a-notebook">
 <h2>Before Running a Notebook<a class="headerlink" href="#before-running-a-notebook" title="Link to this heading">#</a></h2>
-<p>Before running these examples you <strong>must</strong> follow the general instructions on creating an environment that can run the notebooks, shown in STScI HST Notebook Repository HQ page under <a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/index.html">Installation Instructions</a>.</p>
+<p>Before running these examples, you <strong>must</strong> follow the general instructions on creating an environment that can run the notebooks, shown in STScI HST Notebook Repository HQ page under <a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/index.html"><strong>Installation Instructions</strong></a>.</p>
 </section>
 <section id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Link to this heading">#</a></h2>
 <section id="simple-example-notebooks">
 <h3>Simple Example Notebooks<a class="headerlink" href="#simple-example-notebooks" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>acs_subarrays</strong>: Instructions for how to use the <code class="docutils literal notranslate"><span class="pre">acstools.acs_destripe_plus</span></code> module to calibrate, de-stripe, and correct ACS subarray observations for charge transfer efficiency (CTE). Also included are instructions for updating the <code class="docutils literal notranslate"><span class="pre">OSCNTAB</span></code> reference file to subtract the bias level from the prescan columns in user-defined subarray observations.</p></li>
-<li><p><strong>acs_pixel_area_maps</strong>: This notebook shows how to use Python to create pixel area maps (PAMs) to account for the effects of geometric distortion in distorted images. This enables users to perform photometry on distorted images.</p></li>
-<li><p><strong>acs_polarization_tools</strong>: ACS/WFC offers two sets of polarizers, UV and visible, for imaging polarimetry and imaging spectropolarimetry. This notebook provides guidance on using the <code class="docutils literal notranslate"><span class="pre">acstools.polarization_tools</span></code> module to retrieve polarization calibration coefficients and calculate polarization properties of a source.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_subarrays/acs_subarrays.html"><strong>acs_subarrays</strong></a>: Instructions for how to use the <code class="docutils literal notranslate"><span class="pre">acstools.acs_destripe_plus</span></code> module to calibrate, de-stripe, and correct ACS subarray observations for charge transfer efficiency (CTE). Also included are instructions for updating the <code class="docutils literal notranslate"><span class="pre">OSCNTAB</span></code> reference file to subtract the bias level from the prescan columns in user-defined subarray observations.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_pixel_area_maps/acs_pixel_area_maps.html"><strong>acs_pixel_area_maps</strong></a>: This notebook shows how to use Python to create pixel area maps (PAMs) to account for the effects of geometric distortion in distorted images. This enables users to perform photometry on distorted images.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_polarization_tools/acs_polarization_tools.html"><strong>acs_polarization_tools</strong></a>: ACS/WFC offers two sets of polarizers, UV and visible, for imaging polarimetry and imaging spectropolarimetry. This notebook provides guidance on using the <code class="docutils literal notranslate"><span class="pre">acstools.polarization_tools</span></code> module to retrieve polarization calibration coefficients and calculate polarization properties of a source.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_exception_report/exception_report_checks.html"><strong>acs_exception_report</strong></a>: This notebook provides a step-by-step guide for examining your ACS data and observing logs to identify potential data quality issues via an HST Exception Report, and outlines the process for deciding whether a HOPR or Help Desk ticket is warranted.</p></li>
 </ul>
 </section>
 <section id="complex-workflow-notebooks">
 <h3>Complex Workflow Notebooks<a class="headerlink" href="#complex-workflow-notebooks" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>acs_reduction</strong>: This worked example demonstrates how to use the CALACS pipeline to re-process raw ACS data retrieved from MAST. Users are shown how to update reference files in the image headers, retrieve reference files from the Calibration Reference Data System (CRDS), and how to toggle steps in the calibration pipeline (e.g., CTE correction).</p></li>
-<li><p><strong>acs_cte_forward_model</strong> The capability to simulate the readout of an ACS image at a given epoch is a feature of CALACS that does not run during standard calibration. This example demonstrates how to take a pristine image, or one corrected for time-dependent CTE loss, and simulate CTE losses for an arbitrary observation date using <code class="docutils literal notranslate"><span class="pre">acstools.acscteforwardmodel</span></code>.</p></li>
-<li><p><strong>acs_saturation_trails</strong> The ACS/WFC CCDs remain linear beyond the full-well saturation, which allows users the opportunity to perform photometry on saturated stars. This notebook demonstrates the methods and caveats when performing saturated star photometry.</p></li>
-<li><p><strong>acs_sbc_dark_analysis</strong>: The ACS Solar Blind Channel (SBC) has nominally negligible dark current. However, the temperature of the SBC detector increases steadily over time while it is in use, and the dark current is proportional to temperature. At temperatures above 25 ºC, the dark current is no longer negligible and must be subracted. This workflow demonstrates how to account for dark current in ACS/SBC observations.</p></li>
-<li><p><strong>acs_findsat_mrt_example.ipynb</strong>: ACS/WFC imaging data is often affected by contamination by artificial satellites, compromising science data. The <code class="docutils literal notranslate"><span class="pre">acstools.findsat_mrt</span></code> module can be used to identify satellite trails and create masks to reject affected pixels from further analysis.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_reduction/acs_reduction.html"><strong>acs_reduction</strong></a>: This worked example demonstrates how to use the CALACS pipeline to re-process raw ACS data retrieved from MAST. Users are shown how to update reference files in the image headers, retrieve reference files from the Calibration Reference Data System (CRDS), and how to toggle steps in the calibration pipeline (e.g., CTE correction).</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_cte_forward_model/acs_cte_forward_model_example.html"><strong>acs_cte_forward_model</strong></a>: The capability to simulate the readout of an ACS image at a given epoch is a feature of CALACS that does not run during standard calibration. This example demonstrates how to take a pristine image, or one corrected for time-dependent CTE loss, and simulate CTE losses for an arbitrary observation date using <code class="docutils literal notranslate"><span class="pre">acstools.acscteforwardmodel</span></code>.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_saturation_trails/acs_saturation_trails.html"><strong>acs_saturation_trails</strong></a>: The ACS/WFC CCDs remain linear beyond the full-well saturation, which allows users the opportunity to perform photometry on saturated stars. This notebook demonstrates the methods and caveats when performing saturated star photometry.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_sbc_dark_analysis/acs_sbc_dark_analysis.html"><strong>acs_sbc_dark_analysis</strong></a>: The ACS Solar Blind Channel (SBC) has nominally negligible dark current. However, the temperature of the SBC detector increases steadily over time while it is in use, and the dark current is proportional to temperature. At temperatures above 25 ºC, the dark current is no longer negligible and must be subtracted. This workflow demonstrates how to account for dark current in ACS/SBC observations.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_findsat_mrt/acs_findsat_mrt_example.html"><strong>acs_findsat_mrt_example</strong></a>: ACS/WFC imaging data is often affected by contamination by artificial satellites, compromising science data. The <code class="docutils literal notranslate"><span class="pre">acstools.findsat_mrt</span></code> module can be used to identify satellite trails and create masks to reject affected pixels from further analysis.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/acs_focus_diverse_epsfs/acs_focus_diverse_epsfs.html"><strong>acs_focus_diverse_epsfs</strong></a>: This notebook provides instructions on using the <code class="docutils literal notranslate"><span class="pre">acstools.focus_diverse_epsfs</span></code> module to retrieve empirical, focus-diverse ePSFs for ACS/WFC data.</p></li>
+<li><p><a class="reference external" href="https://spacetelescope.github.io/hst_notebooks/notebooks/ACS/hst_orbits_ephem/hst_orbits_ephem.html"><strong>hst_orbits_ephem</strong></a>: Instructions on how to obtain information about HST’s location and pointing direction relative to Earth and the Sun for a given observation.</p></li>
 </ul>
 </section>
 </section>
@@ -514,11 +636,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="acs_saturation_trails/acs_saturation_trails.html"
+       href="acs_findsat_mrt/acs_findsat_mrt_example.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ACS Linearity with Saturated Stars</p>
+        <p class="prev-next-title">Satellite trail detection in ACS/WFC data using acstools.findsat_mrt</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
